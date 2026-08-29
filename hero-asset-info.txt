@@ -1,0 +1,1 @@
+The final hero image is maintained in the deployment package.
