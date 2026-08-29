@@ -1,0 +1,1 @@
+final hero local asset will be served as the page hero
