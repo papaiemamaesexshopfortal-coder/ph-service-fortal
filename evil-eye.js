@@ -1,12 +1,21 @@
-import { Renderer, Program, Mesh, Triangle } from 'ogl';
+import { Renderer, Program, Mesh, Triangle } from 'https://esm.sh/ogl@1.0.11';
 
 const hero = document.querySelector('.hero');
 
 if (hero) {
+  const style = document.createElement('style');
+  style.textContent = `
+    .hero::after{z-index:1!important}
+    .hero .wrap{z-index:3!important}
+    .evil-eye-container{z-index:2!important;opacity:.95!important;mix-blend-mode:screen}
+    .evil-eye-container canvas{width:100%!important;height:100%!important;display:block}
+  `;
+  document.head.appendChild(style);
+
   const layer = document.createElement('div');
   layer.className = 'evil-eye-container';
   layer.style.zIndex = '2';
-  layer.style.opacity = '0.88';
+  layer.style.opacity = '0.95';
   layer.style.pointerEvents = 'none';
   hero.prepend(layer);
 
