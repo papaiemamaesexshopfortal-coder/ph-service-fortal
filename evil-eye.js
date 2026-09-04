@@ -1,4 +1,4 @@
-import { Renderer, Program, Mesh, Triangle } from 'https://esm.sh/ogl@1.0.11';
+import { Renderer, Program, Mesh, Triangle } from 'ogl';
 
 const hero = document.querySelector('.hero');
 
@@ -6,7 +6,7 @@ if (hero) {
   const layer = document.createElement('div');
   layer.className = 'evil-eye-container';
   layer.style.zIndex = '2';
-  layer.style.opacity = '0.78';
+  layer.style.opacity = '0.88';
   layer.style.pointerEvents = 'none';
   hero.prepend(layer);
 
