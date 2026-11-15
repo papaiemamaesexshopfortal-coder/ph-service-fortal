@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/emily",
+      "destination": "https://caixa-autonomo-servico.blithenoodle2.chatgpt.site/vendas",
+      "permanent": false
+    },
+    {
+      "source": "/calculadora",
+      "destination": "https://caixa-autonomo-servico.blithenoodle2.chatgpt.site/vendas/produto/calculadora-ficha-tecnica-preco",
+      "permanent": false
+    }
+  ]
+}
